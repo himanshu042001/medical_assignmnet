@@ -1,75 +1,108 @@
-
-
 .medical {
-   text-align: center;
-   padding: 40px;
-   background-color: #f0f8ff;
- }
- 
- .medical-header {
-   font-size: 2.5em;
-   margin-bottom: 10px;
- }
- 
- .medical-subheader {
-   font-size: 1em;
-   margin: 5px 0;
-   color: #888; 
-   font-weight: bold;
- }
- 
- .medical-cards {
-   display: flex;
-   justify-content: center;
-   flex-wrap: wrap;
-   gap: 20px;
-   margin-top: 20px;
- }
- 
- .medical-card {
-   background-color: #fff;
-   border: 1px solid #ddd;
-   border-radius: 18px; 
-   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); 
-   padding: 20px;
-   width: 180px;
-   height: 180px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   transition: transform 0.3s, border-color 0.3s, border-width 0.3s; 
- }
- 
- .medical-card:hover {
-   transform: scale(1.05);
-   border-top: 6px solid #007BFF; 
-   border-left: 6px solid #007BFF; 
- }
- 
- .medical-icon {
-   color: #efaa17; 
-   font-size: 2em;
-   margin-bottom: 10px;
- }
- 
- .medical-card-text {
-   font-size: 1em;
-   color: #000; 
-   text-align: center;
-   font-weight: bold;
- }
- 
- 
- @media (max-width: 768px) {
-   .medical-cards {
-     flex-direction: column;
-     align-items: center;
-   }
- 
-   .medical-card {
-     width: 100%;
-     max-width: 300px;
-   }
- }
- 
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f8ff;
+}
+
+.medical-header {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.medical-subheader {
+  font-size: 1em;
+  margin: 5px 0;
+  color: #888; 
+  font-weight: bold;
+}
+
+.medical-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.medical-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 18px; 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); 
+  padding: 20px;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s, border-color 0.3s, border-width 0.3s; 
+}
+
+.medical-card:hover {
+  transform: scale(1.05);
+  border-top: 6px solid #007BFF; 
+  border-left: 6px solid #007BFF; 
+}
+
+.medical-icon {
+  color: #efaa17; 
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.medical-card-text {
+  font-size: 1em;
+  color: #000; 
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .medical {
+    padding: 20px 10px;
+  }
+
+  .medical-header {
+    font-size: 2em;
+  }
+
+  .medical-subheader {
+    font-size: 0.9em;
+  }
+
+  .medical-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .medical-card {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .medical-header {
+    font-size: 1.8em;
+  }
+
+  .medical-subheader {
+    font-size: 0.8em;
+  }
+
+  .medical-card {
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .medical-icon {
+    font-size: 1.8em;
+  }
+
+  .medical-card-text {
+    font-size: 0.9em;
+  }
+}
